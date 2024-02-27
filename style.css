@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fluid{
+    width: 100%;
+    background: rgba(1, 1, 1, 0.5);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}   
+
+.fluid .navigation .logo img{
+    width: 4.7rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 20px;
+    color: #fff;
+    background: #373737;
+    z-index: 201;
+   
+}
+
+.navigation .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.navigation .logo h2{
+    font-size: 1.2rem;
+}
+
+.navigation .ul ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 5px;
+    font-size: 1rem;
+}
+
+.ul ul li{
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.ul ul li i{
+    font-size: .8rem;
+}
+
+.ul ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2.5px;
+    background: #fff;
+    transition: .5s all ease;
+}
+
+.ul ul li a:hover::after{
+    width: 100%;
+}
+
+.ul ul li a:hover, .ul ul li:hover  {
+    color: #fff;
+}
+
+.maroon-top{
+    width: 100%;
+    background-color: #0a2351;
+    height: .5rem;
+}
+
+::selection{
+    background: #282828;
+    color: #fff;
+}
+
+/* VIDEO SECTION */
+
+.video-container {
+    overflow: hidden;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+}
+
+.embed-responsive-item{
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:900px;
+    border: 0;
+}
+
+/* BULLETIN */
+
+section.bulletin{
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+section.bulletin .text .contents .image-text img{
+    width:  370px;
+    height: 219px;
+}
+
+section.bulletin .text .contents{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+section.bulletin .text{
+    padding: 5rem 9rem;
+    position: absolute;
+    top: 10px;
+}
+
+section.bulletin .abs{
+    position: relative;
+    color: #00AB55;
+    text-align: center;
+    
+}
+
+.abs .filter{
+    filter: brightness(20%);
+    width: 100%;
+    height: 35rem;
+}
+
+.abs .text .contents p{
+    font-size: 1rem;
+    font-weight: 550;
+    font-family: monospace;
+    line-height: 25px;
+}
+
+.abs .text .h1-text{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.abs .text .h1-text:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 2px;
+    background: #fff;
+}
+
+.abs .text h1{
+    position: relative;
+}
+
+
