@@ -24,7 +24,7 @@
     color: #fff;
     background-color: rgba(10, 10, 10, 0.5);
     z-index: 201;
-   
+    font-family: roboto;
 }
 
 .navigation .logo{
@@ -124,7 +124,7 @@ ul a{
 
 .video-container {
     overflow: hidden;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     width: 100%;
 }
@@ -314,6 +314,7 @@ section.bulletin .abs{
 .enroll-now .four-grid .apply-now hr{
     width: 20%;
     margin-top: 5px;
+    background-color: #00c709!important;
 }
 
 .enroll-now .four-grid{
@@ -346,6 +347,7 @@ section.bulletin .abs{
 
 .four-grid .apply-now i{
     color: #00703c;
+    cursor: pointer;
 }
 
 .four-grid .apply-now:hover{
@@ -358,6 +360,7 @@ section.bulletin .abs{
     color: #00c709;
     font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .four-grid .apply-now .apply-text h5:hover{
@@ -367,11 +370,23 @@ section.bulletin .abs{
 
 .four-grid .apply-now .apply-text i{
     color: #00c709;
+    cursor: pointer;
 }
 
 .four-grid .apply-now .apply-text h2{
     font-size: 1.8rem;
+    cursor: pointer;
 }
+
+
+.enroll-now{
+    background-image: linear-gradient(white,#60b2ec );
+}
+
+
+
+
+
 
 
 
