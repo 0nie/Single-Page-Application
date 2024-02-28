@@ -196,15 +196,20 @@ section.bulletin .abs{
 .abs .text .h1-text:after{
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 5px;
-    height: 2px;
+    bottom: 36px;
+    left: 390px;
+    width: 2.2rem;
+    height: 1px;
     background: #fff;
 }
 
 .abs .text .h1-con{
     position: relative;
+}
+
+.bulletin .abs .text .contents .image-text img:hover{
+    transform: scale(0.90);
+    transition: .5s;
 }
 
 /* ENROLL */
@@ -304,6 +309,7 @@ section.bulletin .abs{
     backdrop-filter: blur(0px);
     background-color: rgba(34, 31, 31, 0.5);
     height: 9rem;
+    border-radius: 4px;
 }
 
 
@@ -323,7 +329,7 @@ section.bulletin .abs{
     max-width: 1200px;
     margin: 0 auto;
     gap: 15px;
-    
+    margin-top: 10px;
 }
 
 .enroll-now .four-grid .apply-text{
@@ -381,7 +387,175 @@ section.bulletin .abs{
 
 .enroll-now{
     background-image: linear-gradient(white,#60b2ec );
+    height: 40rem;
 }
+
+section.bulletin .text .contents .image-text p{
+    color: #00AB55;
+    ;
+}
+
+
+/* EVENTS */
+
+section.events .event-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.event-wrapper .event-h1 h1{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.event-wrapper .event-h1{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.event-wrapper .event-h1 h1:before{
+    content: "";
+    position: absolute;
+    width: 43%;
+    top: 1rem;
+    left: 0;
+    height: 4px;
+    background: #751518;
+    
+}
+
+.event-wrapper .event-h1 h1::after{
+    content: "";
+    position: absolute;
+    width: 43%;
+    top: 1rem;
+    right: 0;
+    height: 4px;
+    background: #751518;
+    ;
+}
+
+.event-wrapper .event-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.event-wrapper .event-grid .first-row .container{
+    height: 500px;
+    padding: .7rem .3rem;
+}
+
+.event-wrapper .event-grid .first-row .container:hover{
+    background: rgb(237, 232, 232);
+    cursor: pointer;
+}
+
+.event-wrapper .event-grid .first-row img{
+    width: 600px;
+    height: 380px;
+    border-radius: 5px;
+}
+
+.event-wrapper .event-grid .first-row .text-flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.event-wrapper .event-grid .first-row .text-flex h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #751518;
+    margin-left: 10px;
+}
+
+.event-wrapper .event-grid .first-row .text-flex h1 .date{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.event-wrapper .event-grid .first-row .text-flex .notflex h4{
+    color: #751518;
+    font-weight: 800;
+}
+
+.event-wrapper .event-grid .first-row .text-flex .notflex p{
+    text-align: justify;
+    color: black;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .img-text img{
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container .inner-flex{
+    display: flex;
+   
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container .inner-flex .img-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.event-wrapper .event-grid .grid-3rd-col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container .inner-flex h1{
+    color: #751518;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container .inner-flex h1 .date{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container:hover{
+    background: rgb(237, 232, 232);
+
+}
+
+.p-top{
+    margin-top: .7rem;
+}
+
+.maroon{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #751518;
+}
+
+.event-wrapper .event-grid .grid-3rd-col .three-container{
+    padding: .4rem;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
