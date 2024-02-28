@@ -1031,6 +1031,54 @@ section.footer{
     transition: .3s;
 }
 
+/* Cursor */
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+.cursor-outline{
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #147efb;
+    display: inline-flex;
+    padding: .35rem;
+    color: #2d2e32;
+    font-size: 1.25rem;
+    z-index: 199;
+    transition: .3s;
+}
+
+.scrollup:hover{
+    transform: translateY(-.25rem);
+}
+
+.show-scroll{
+    bottom: 3rem;
+    transition: .6s;
+}
+.show-scroll {
+    text-decoration: none;  
+}
 
 
 
